@@ -1,0 +1,23 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: wwc_acm_paper.aux
+The style file: ACM-Reference-Format-Journals.bst
+Database file #1: acmtog-sample-bibfile.bib
+Warning--no key, author in Editor00
+Warning--no key, author in Editor00
+Warning--no key, author in Editor00a
+Warning--no key, author in Editor00a
+Warning--no number and no volume in CDFKMS-06
+Warning--empty chapter and pages in Editor00
+Warning--page numbers missing in Editor00a
+Warning--empty address in GPMBH-2005
+Warning--require articleno with numpages field in Kirschmer:2010:AEI:1958016.1958018
+Warning--empty address in Knuth97
+Warning--articleno field, but no numpages field, in Lee05
+Warning--page numbers missing in both pages and numpages fields in Lee05
+Warning--require pages or numpages fields with articleno field in Lee05
+Warning--unrecognized DOI value [99.9999/woot07-S422]
+Warning--articleno field, but no numpages field, in rous08
+Warning--page numbers missing in both pages and numpages fields in rous08
+Warning--require pages or numpages fields with articleno field in rous08
+Warning--page numbers missing in both pages and numpages fields in SaeediJETC10
+Warning--unrecognized DOI value [99.9999/woot07-S422]
+(There were 19 warnings)
