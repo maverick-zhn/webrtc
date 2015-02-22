@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  8 FEB 2015 13:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  21 FEB 2015 19:55
 entering extended mode
 **sigplan-acm-wwc-paper.tex
-(C:\Users\Maverick\Desktop\Paper\sigplan-acm-wwc-paper.tex
+(C:\Users\Maverick\Desktop\wwc\webrtc\paper\sigplan-acm-wwc-paper.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\Maverick\Desktop\Paper\sig-alternate.cls
+(C:\Users\Maverick\Desktop\wwc\webrtc\paper\sig-alternate.cls
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
@@ -463,7 +463,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))))
-(C:\Users\Maverick\Desktop\Paper\sigplan-acm-wwc-paper.aux)
+(C:\Users\Maverick\Desktop\wwc\webrtc\paper\sigplan-acm-wwc-paper.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
@@ -507,27 +507,42 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 149.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 151--160
+Overfull \hbox (2.13672pt too wide) in paragraph at lines 152--154
+\T1/aer/m/n/9 web pro-gram-ming and, in-creas-ingly, for gen-eral pur-pose com-
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \\T
+         his paper provides a sample of a \LaTeX\ document which conforms,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (1.0793pt too wide) in paragraph at lines 155--164
 \T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
 []$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (1.26794pt too wide) in paragraph at lines 178--179
+Overfull \hbox (1.26794pt too wide) in paragraph at lines 182--183
 \T1/aer/m/n/9 H.4 [\T1/aer/bx/n/9 Information Sys-tems Ap-pli-ca-tions\T1/aer/m
 /n/9 ]: Mis-cel-la-neous;
  []
 
-
-Underfull \vbox (badness 2856) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 202.
-
+LaTeX Font Info:    Try loading font information for T1+aett on input line 206.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Underfull \hbox (badness 1360) in paragraph at lines 202--202
+Underfull \hbox (badness 1360) in paragraph at lines 206--206
 [][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
 m/n/9 and \T1/aett/m/n/9 \alig-nau-
  []
@@ -542,104 +557,104 @@ Non-PDF special ignored!
 ]
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 258.
+ne 262.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 273.
+ne 277.
 
 
 LaTeX Warning: Citation `bowman:reasoning' on page \thepage  undefined on input
- line 300.
+ line 304.
 
 
 LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 3
-00.
+04.
 
 
 LaTeX Warning: Citation `braams:babel' on page \thepage  undefined on input lin
-e 300.
+e 304.
 
 
 LaTeX Warning: Citation `herlihy:methodology' on page \thepage  undefined on in
-put line 300.
+put line 304.
 
 
 LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 3
-01.
+05.
 
 
 LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 302.
+ine 306.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 302.
+ne 306.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 308.
+ne 312.
 
 
 LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 319.
+ne 323.
 
 [2]
 Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2015-02-08 03:02:39
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 155104 bytes
 (epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-08 12:52:56
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 4257 bytes
 (epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
 y.eps>
-(epstopdf)             \includegraphics on input line 394.
+(epstopdf)             \includegraphics on input line 398.
 Package epstopdf Info: Output file is already uptodate.
  <fly-eps-converted-to.pdf, id=25, 34.1275pt x 32.12pt>
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 394.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 398.
 (pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
 Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2015-02-08 03:02:39
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 155104 bytes
 (epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-08 12:52:56
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 4257 bytes
 (epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
 y.eps>
-(epstopdf)             \includegraphics on input line 400.
+(epstopdf)             \includegraphics on input line 404.
 Package epstopdf Info: Output file is already uptodate.
 File: fly-eps-converted-to.pdf Graphic file (type pdf)
  <use fly-eps-converted-to.pdf>
-Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 400.
+Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 404.
 (pdftex.def)             Requested size: 72.27492pt x 72.27565pt.
 
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 402.
+(Font)              using `T1/aett/m/n' instead on input line 406.
 
 Package epstopdf Info: Source file: <flies.eps>
-(epstopdf)                    date: 2015-02-08 03:02:33
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 343737 bytes
 (epstopdf)             Output file: <flies-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-08 12:52:57
+(epstopdf)                    date: 2015-02-09 23:55:16
 (epstopdf)                    size: 9701 bytes
 (epstopdf)             Command: <epstopdf --outfile=flies-eps-converted-to.pdf 
 flies.eps>
-(epstopdf)             \includegraphics on input line 415.
+(epstopdf)             \includegraphics on input line 419.
 Package epstopdf Info: Output file is already uptodate.
 <flies-eps-converted-to.pdf, id=26, 307.1475pt x 114.4275pt>
 File: flies-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flies-eps-converted-to.pdf>
-Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 415.
+Package pdftex.def Info: flies-eps-converted-to.pdf used on input line 419.
 (pdftex.def)             Requested size: 307.14674pt x 114.42722pt.
 \c@theorem=\count149
 \c@definition=\count150
 
-Overfull \hbox (15.60826pt too wide) detected at line 483
+Overfull \hbox (15.60826pt too wide) detected at line 487
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9  [] [] \OT1/cmr/m/n/9 = 0 \OMS/cmsy
@@ -648,19 +663,19 @@ m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9  [] [] \OT1/cmr/m/n/9 = 0 \OMS/cmsy
 
 
 LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 493.
+ine 497.
 
-[3 <C:/Users/Maverick/Desktop/Paper/fly-eps-converted-to.pdf>]
+[3 <C:/Users/Maverick/Desktop/wwc/webrtc/paper/fly-eps-converted-to.pdf>]
 No file sigplan-acm-wwc-paper.bbl.
-[4 <C:/Users/Maverick/Desktop/Paper/flies-eps-converted-to.pdf>]
-(C:\Users\Maverick\Desktop\Paper\sigplan-acm-wwc-paper.aux)
+[4 <C:/Users/Maverick/Desktop/wwc/webrtc/paper/flies-eps-converted-to.pdf>]
+(C:\Users\Maverick\Desktop\wwc\webrtc\paper\sigplan-acm-wwc-paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
  10147 strings out of 493921
- 170936 string characters out of 3144868
+ 171035 string characters out of 3144868
  231404 words of memory out of 3000000
  13217 multiletter control sequences out of 15000+200000
  63050 words of font info for 86 fonts, out of 3000000 for 9000
@@ -684,7 +699,7 @@ w/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigplan-acm-wwc-paper.pdf (4 pages, 246193 bytes).
+Output written on sigplan-acm-wwc-paper.pdf (4 pages, 246846 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
