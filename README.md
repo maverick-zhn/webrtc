@@ -8,7 +8,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * ~~Setting environment, prepare webrtc codelab~~
 * ~~Research articles an implementation details~~
 * ~~Read about Javascript Session Establishment Protocol **JSEP** and DTLS paper~~
-* Getting started with **WebRTC**
+* ~~Getting started with **WebRTC**~~
 * **WebRTC** data channels
 * All **WebRTC** NodeJS Modules
 * webrtc.io: Abstraction for **WebRTC** (npm)
@@ -26,5 +26,6 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 6. [Very important] --> https://datatracker.ietf.org/doc/draft-ietf-rtcweb-jsep/?include_text=1
 7. https://code.google.com/p/rfc5766-turn-server/
 8. http://www.html5rocks.com/en/tutorials/webrtc/basics/
+9. http://socket.io/docs/
 
 
