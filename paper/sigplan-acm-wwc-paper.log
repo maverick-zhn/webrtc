@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  21 FEB 2015 19:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  21 FEB 2015 19:58
 entering extended mode
 **sigplan-acm-wwc-paper.tex
 (C:\Users\Maverick\Desktop\wwc\webrtc\paper\sigplan-acm-wwc-paper.tex
@@ -511,19 +511,6 @@ Overfull \hbox (2.13672pt too wide) in paragraph at lines 152--154
 \T1/aer/m/n/9 web pro-gram-ming and, in-creas-ingly, for gen-eral pur-pose com-
 
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 \\T
-         his paper provides a sample of a \LaTeX\ document which conforms,
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 Overfull \hbox (1.0793pt too wide) in paragraph at lines 155--164
