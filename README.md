@@ -28,4 +28,17 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 8. http://www.html5rocks.com/en/tutorials/webrtc/basics/
 9. http://socket.io/docs/
 
+### Environment
+1. https://dashboard.heroku.com/apps
+2. https://ide.c9.io/maverikzhn/demo-project#openfile-README
+3. https://trello.com/b/9vMdqkI1/world-wide-cluster-v2
+4. https://bitbucket.org/webrtc/codelab
+5. http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/#beyond-one-to-one-multi-party-webrtc
+6. https://datatracker.ietf.org/doc/draft-ietf-rtcweb-jsep/?include_text=1
+7. http://www.html5rocks.com/en/tutorials/webrtc/basics/
+8. http://tools.ietf.org/html/draft-jesup-rtcweb-data-protocol-00#page-3
+9. http://socket.io/docs/
+10. https://github.com/Automattic/socket.io/issues/1544
+
+
 
