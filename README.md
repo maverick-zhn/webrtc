@@ -42,5 +42,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 
 ###MapReduce Java
 * http://wiki.apache.org/hadoop/WordCount
+* http://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
+
 
 
