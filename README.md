@@ -40,5 +40,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 9. http://socket.io/docs/
 10. https://github.com/Automattic/socket.io/issues/1544
 
+###MapReduce Java
+* http://wiki.apache.org/hadoop/WordCount
 
 
