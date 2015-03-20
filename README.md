@@ -46,6 +46,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * [1]http://thedevnotes.blogspot.com/2014/02/starting-with-hadoop-and-mapreduce.html
 * [2 very helpful configuration]https://dataheads.wordpress.com/2013/11/21/hadoop-2-setup-on-64-bit-ubuntu-12-04-part-1/
 * https://www.youtube.com/watch?v=N9PLMYcMdUk
+* [Installing Eclipse]http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/
 
 
 
