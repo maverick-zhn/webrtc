@@ -48,5 +48,9 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * https://www.youtube.com/watch?v=N9PLMYcMdUk
 * [Installing Eclipse]http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/
 
+###Paper links
+* http://stackoverflow.com/questions/24119897/apache-spark-vs-apache-storm
+* https://sites.google.com/site/acm2015socc/home/call-for-papers
+* http://www.read.seas.harvard.edu/~kohler/latex.html
 
 
