@@ -47,6 +47,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * [2 very helpful configuration]https://dataheads.wordpress.com/2013/11/21/hadoop-2-setup-on-64-bit-ubuntu-12-04-part-1/
 * https://www.youtube.com/watch?v=N9PLMYcMdUk
 * [Installing Eclipse]http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/
+* https://hadoop.apache.org/docs/current/api/org/apache/hadoop/examples/terasort/package-summary.html
 
 ###Paper links
 * http://stackoverflow.com/questions/24119897/apache-spark-vs-apache-storm
