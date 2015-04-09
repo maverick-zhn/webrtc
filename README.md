@@ -54,4 +54,21 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * https://sites.google.com/site/acm2015socc/home/call-for-papers
 * http://www.read.seas.harvard.edu/~kohler/latex.html
 
+####Cited papers
+http://bit.ly/1FjEwVN
+http://bit.ly/1CdjBNI
+http://bit.ly/1CdjPEF
+http://bit.ly/1CdjTUQ
+http://bit.ly/1CdjWjn
+http://bit.ly/1yc8997
+http://bit.ly/1CdjYrE
+http://bit.ly/1Cdk2Yv
+http://bit.ly/1Cdk7vl
+http://bit.ly/1Cw5SQZ
+http://bit.ly/1yc9Bs3
+
+####Tools
+http://www.paperrater.com/
+
+
 
