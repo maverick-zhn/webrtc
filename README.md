@@ -69,6 +69,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 
 ####Tools
 * http://www.paperrater.com/
+* http://detexify.kirelabs.org/classify.html
 
 
 
