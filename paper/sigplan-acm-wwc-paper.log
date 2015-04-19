@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  21 FEB 2015 19:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.1)  1 APR 2015 00:31
 entering extended mode
 **sigplan-acm-wwc-paper.tex
 (C:\Users\Maverick\Desktop\wwc\webrtc\paper\sigplan-acm-wwc-paper.tex
@@ -588,10 +588,10 @@ ne 323.
 
 [2]
 Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 155104 bytes
 (epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 4257 bytes
 (epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
 y.eps>
@@ -604,10 +604,10 @@ File: fly-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: fly-eps-converted-to.pdf used on input line 398.
 (pdftex.def)             Requested size: 34.1274pt x 32.1199pt.
 Package epstopdf Info: Source file: <fly.eps>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 155104 bytes
 (epstopdf)             Output file: <fly-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 4257 bytes
 (epstopdf)             Command: <epstopdf --outfile=fly-eps-converted-to.pdf fl
 y.eps>
@@ -623,10 +623,10 @@ LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 406.
 
 Package epstopdf Info: Source file: <flies.eps>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 343737 bytes
 (epstopdf)             Output file: <flies-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-09 23:55:16
+(epstopdf)                    date: 2015-02-10 00:55:16
 (epstopdf)                    size: 9701 bytes
 (epstopdf)             Command: <epstopdf --outfile=flies-eps-converted-to.pdf 
 flies.eps>
@@ -663,7 +663,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  10147 strings out of 493921
  171035 string characters out of 3144868
- 231404 words of memory out of 3000000
+ 231402 words of memory out of 3000000
  13217 multiletter control sequences out of 15000+200000
  63050 words of font info for 86 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
