@@ -74,5 +74,11 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * http://www.read.seas.harvard.edu/~kohler/latex.html
 * http://www.tablesgenerator.com/
 
+####References
+http://www.bibtex.org/
+http://www.bibtex.org/Using/
+https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM
+http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file
+
 
 
