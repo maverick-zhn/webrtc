@@ -1,0 +1,213 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agten et~al.(2012)Agten, Acker, and Brondsema]{Agten2012}
+P.~Agten, S.~V. Acker, and Y.~Brondsema.
+\newblock {JSand: Complete client-side sandboxing of third-party JavaScript
+  without browser modifications}.
+\newblock \emph{Acsac 2012}, pages 1--10, 2012.
+\newblock \doi{10.1145/2420950.2420952}.
+\newblock URL \url{https://lirias.kuleuven.be/handle/123456789/360451}.
+
+\bibitem[Alur and Dill(1994)]{Alur1994}
+R.~Alur and D.~L. Dill.
+\newblock {A theory of timed automata}.
+\newblock \emph{Theoretical Computer Science}, 126\penalty0 (2):\penalty0
+  183--235, 1994.
+\newblock ISSN 03043975.
+\newblock \doi{10.1016/0304-3975(94)90010-8}.
+
+\bibitem[Amazon()]{Amazon}
+Amazon.
+\newblock {Amazon Cloud Drive}.
+\newblock URL \url{https://www.amazon.com/clouddrive/home}.
+
+\bibitem[Caolan()]{Caolan}
+Caolan.
+\newblock {Async}.
+\newblock URL \url{https://github.com/caolan/async}.
+
+\bibitem[Chen and Storey(2012)]{Chen2012}
+H.~Chen and V.~C. Storey.
+\newblock {Business Inteligence and Analytics : From Big Data To Big Impact}.
+\newblock 36\penalty0 (4):\penalty0 1165--1188, 2012.
+
+\bibitem[Chu et~al.(2007)Chu, Kim, Lin, Yu, Bradski, Ng, and Olukotun]{Chu2007}
+C.-T. Chu, S.~K. Kim, Y.-A. Lin, Y.~Yu, G.~Bradski, A.~Y. Ng, and K.~Olukotun.
+\newblock {Map-Reduce for Machine Learning on Multicore}.
+\newblock \emph{Advances in Neural Information Processing Systems 19}, pages
+  281--288, 2007.
+\newblock ISSN 10495258.
+\newblock \doi{10.1234/12345678}.
+
+\bibitem[Dabek and Zeldovich(2002)]{Dabek2002}
+F.~Dabek and N.~Zeldovich.
+\newblock {Event-driven programming for robust software}.
+\newblock \emph{Proceedings of the 10th workshop on ACM SIGOPS European
+  workshopn workshop}, pages 186 -- 189, 2002.
+\newblock \doi{10.1145/1133373.1133410}.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1133410}.
+
+\bibitem[Dean and Ghemawat(2008)]{Dean2008}
+J.~Dean and S.~Ghemawat.
+\newblock {MapReduce : Simplified Data Processing on Large Clusters}.
+\newblock \emph{Communications of the ACM}, 51\penalty0 (1):\penalty0 1--13,
+  2008.
+\newblock ISSN 00010782.
+\newblock \doi{10.1145/1327452.1327492}.
+\newblock URL \url{http://portal.acm.org/citation.cfm?id=1327492}.
+
+\bibitem[Ekanayake et~al.(2008)Ekanayake, Pallickara, and Fox]{Ekanayake2008}
+J.~Ekanayake, S.~Pallickara, and G.~Fox.
+\newblock {MapReduce for data intensive scientific analyses}.
+\newblock \emph{Proceedings - 4th IEEE International Conference on eScience,
+  eScience 2008}, pages 277--284, 2008.
+\newblock \doi{10.1109/eScience.2008.59}.
+
+\bibitem[{Gropp, William; Lusk, Ewing;
+  Skjellum}(1999)]{GroppWilliamandLuskEwingandSkjellum1999}
+A.~{Gropp, William; Lusk, Ewing; Skjellum}.
+\newblock \emph{{Using MPI (2Nd Ed.): Portable Parallel Programming with the
+  Message-passing Interface}}.
+\newblock MIT Press, Cambridge, MA, USA, 1999.
+\newblock ISBN 0-262-57132-3.
+
+\bibitem[Hadoop()]{Hadoop}
+Hadoop.
+\newblock {Hadoop}.
+\newblock URL \url{http://hadoop.apache.org}.
+
+\bibitem[Haller and Odersky(2009)]{Haller2009}
+P.~Haller and M.~Odersky.
+\newblock {Scala Actors: Unifying thread-based and event-based programming}.
+\newblock \emph{Theoretical Computer Science}, 410\penalty0 (2-3):\penalty0
+  202--220, 2009.
+\newblock ISSN 03043975.
+\newblock \doi{10.1016/j.tcs.2008.09.019}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.tcs.2008.09.019}.
+
+\bibitem[Herhut et~al.(2013)Herhut, Hudson, Shpeisman, and
+  Sreeram]{Herhut2013a}
+S.~Herhut, R.~L. Hudson, T.~Shpeisman, and J.~Sreeram.
+\newblock {River trail}.
+\newblock \emph{Proceedings of the 2013 ACM SIGPLAN international conference on
+  Object oriented programming systems languages \& applications - OOPSLA '13},
+  48\penalty0 (10):\penalty0 729--744, 2013.
+\newblock ISSN 0362-1340.
+\newblock \doi{10.1145/2509136.2509516}.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=2509136.2509516}.
+
+\bibitem[Kopetz et~al.(1989)Kopetz, Damm, Koza, Mulazzani, Schwabl, Senft,
+  Zainlinger, and {Tech. Univ. of Vienna Austria}]{Kopetz1989a}
+H.~Kopetz, A.~Damm, C.~Koza, M.~Mulazzani, W.~Schwabl, C.~Senft, R.~Zainlinger,
+  and A.~{Tech. Univ. of Vienna Austria}.
+\newblock {Distributed fault-tolerant real-time systems: The Mars approach}.
+\newblock \emph{IEEE Micro}, 9\penalty0 (1):\penalty0 25--40, 1989.
+\newblock ISSN 02721732.
+\newblock \doi{10.1109/40.16792}.
+
+\bibitem[Korpela et~al.(2001)Korpela, Werthimer, Anderson, Cobb, and
+  Leboisky]{Korpela2001a}
+E.~Korpela, D.~Werthimer, D.~Anderson, J.~Cobb, and M.~Leboisky.
+\newblock {SETI@home-massively distributed computing for SETI}.
+\newblock \emph{Computing in Science \& Engineering}, 3\penalty0 (1):\penalty0
+  78--83, 2001.
+\newblock ISSN 1521-9615.
+\newblock \doi{10.1109/5992.895191}.
+
+\bibitem[MacWilliam and Cecka(2013)]{MacWilliam2013}
+T.~MacWilliam and C.~Cecka.
+\newblock {CrowdCL: Web-based volunteer computing with WebCL}.
+\newblock \emph{2013 IEEE High Performance Extreme Computing Conference, HPEC
+  2013}, 2013.
+\newblock \doi{10.1109/HPEC.2013.6670348}.
+
+\bibitem[Mckeown et~al.(2008)Mckeown, Anderson, Balakrishnan, Parulkar,
+  Peterson, Rexford, Shenker, Turner, and Louis]{Mckeown2008}
+N.~Mckeown, T.~Anderson, H.~Balakrishnan, G.~M. Parulkar, L.~L. Peterson,
+  J.~Rexford, S.~Shenker, J.~S. Turner, and S.~Louis.
+\newblock {OpenFlow: enabling innovation in campus networks}.
+\newblock \emph{Computer Communication Review}, 38\penalty0 (2):\penalty0
+  69--74, 2008.
+\newblock ISSN 01464833.
+\newblock \doi{10.1145/1355734.1355746}.
+\newblock URL \url{http://doi.acm.org/10.1145/1355734.1355746}.
+
+\bibitem[Nginx()]{Nginx}
+Nginx.
+\newblock nginx.
+\newblock URL \url{http://nginx.org}.
+
+\bibitem[NPM()]{NPM}
+NPM.
+\newblock {Node Package Manager}.
+\newblock URL \url{https://www.npmjs.com/}.
+
+\bibitem[Papadimitriou(2008)]{Papadimitriou2008}
+S.~Papadimitriou.
+\newblock {DisCo: Distributed Co-clustering with Map-Reduce: A case study
+  towards petabyte-scale end-to-end mining}.
+\newblock \emph{Proceedings - IEEE International Conference on Data Mining,
+  ICDM}, pages 512--521, 2008.
+\newblock ISSN 15504786.
+\newblock \doi{10.1109/ICDM.2008.142}.
+
+\bibitem[Redis()]{Redis}
+Redis.
+\newblock {Redis}.
+\newblock URL \url{http://redis.io}.
+
+\bibitem[Socket.io()]{Socket.}
+Socket.io.
+\newblock {Socket.io}.
+\newblock URL \url{http://socket.io/}.
+
+\bibitem[Tilkov and Vinoski(2010)]{Tilkov2010}
+S.~Tilkov and S.~Vinoski.
+\newblock {Node.js: Using JavaScript to build high-performance network
+  programs}.
+\newblock \emph{IEEE Internet Computing}, 14\penalty0 (6):\penalty0 80--83,
+  2010.
+\newblock ISSN 10897801.
+\newblock \doi{10.1109/MIC.2010.145}.
+
+\bibitem[Turing(1937)]{Turing1937a}
+A.~M. Turing.
+\newblock {On computable numbers, with an application to the
+  Entscheidungsproblem}.
+\newblock \emph{Proceedings of the London Mathematical Society}, 42\penalty0
+  (1):\penalty0 230--265, 1937.
+\newblock \doi{10.1112/plms/s2-42.1.230}.
+
+\bibitem[Vogt et~al.(2013)Vogt, Werner, and Schmidt]{Vogt2013}
+C.~Vogt, M.~J. Werner, and T.~C. Schmidt.
+\newblock {Leveraging WebRTC for P2P content distribution in web browsers}.
+\newblock \emph{Proceedings - International Conference on Network Protocols,
+  ICNP}, 2013.
+\newblock ISSN 10921648.
+\newblock \doi{10.1109/ICNP.2013.6733637}.
+
+\bibitem[Yee et~al.(2009)Yee, Sehr, Dardyk, Chen, Muth, Ormandy, Okasaka,
+  Narula, and Fullagar]{Yee2009}
+B.~Yee, D.~Sehr, G.~Dardyk, J.~B. Chen, R.~Muth, T.~Ormandy, S.~Okasaka,
+  N.~Narula, and N.~Fullagar.
+\newblock {Native client: A sandbox for portable, untrusted x86 native code}.
+\newblock \emph{Proceedings - IEEE Symposium on Security and Privacy}, pages
+  79--93, 2009.
+\newblock ISSN 10816011.
+\newblock \doi{10.1109/SP.2009.25}.
+
+\bibitem[Zakai(2011)]{Zakai2011}
+A.~Zakai.
+\newblock {Emscripten: an LLVM-to-JavaScript compiler}.
+\newblock \emph{Proceedings of the ACM international conference companion on
+  Object oriented programming systems languages and applications companion},
+  pages 301--312, 2011.
+\newblock \doi{10.1145/2048147.2048224}.
+\newblock URL \url{http://doi.acm.org/10.1145/2048147.2048224}.
+
+\end{thebibliography}

@@ -1,0 +1,8 @@
+@book{Gropp:1999:UMP:330577,
+ author = {Gropp, William and Lusk, Ewing and Skjellum, Anthony},
+ title = {Using MPI (2Nd Ed.): Portable Parallel Programming with the Message-passing Interface},
+ year = {1999},
+ isbn = {0-262-57132-3},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
