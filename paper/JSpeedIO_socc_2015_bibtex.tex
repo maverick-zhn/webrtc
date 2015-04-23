@@ -128,11 +128,12 @@ The fact that javaScript does not support synchronization primitives, forces us 
 	\centering
 	\includegraphics[scale=0.55]{AsynchronousAutomaton}
 	\caption{Asynchronous automaton representation of a five state algorithm}
+	\label{fig:AsynchronousAutomaton}
 \end{figure}
 
-Rather than implement threaded procedures with synchronization primitives, distributed algorithms in our system  must be represented as a finite state machine of events. In order to illustrate this idea, figure 1 presents a simple distributed algorithm which consists of five states: 
+Rather than implement threaded procedures with synchronization primitives, distributed algorithms in our system  must be represented as a finite state machine of events. In order to illustrate this idea, figure~\ref{fig:AsynchronousAutomaton} presents a simple distributed algorithm which consists of five states: 
 
-Let state an example with figure 1 structure. Given a large dataset containing a sequence of integer numbers, implement an algorithm that reads a section of the dataset from disk and compute the frequency of each integer in the entire dataset. We know that if the dataset contains terabytes of data, we would need to distributively execute this algorithm and receive data from other computing points in our system. In this case, we abstract our problem in states, where state D will asynchronously read from disk, S will receive the pair of <integer, frequency> list from a network socket, and C will compute/recompute these frequencies with the disk and network data, and finally finish the execution if a certain condition is met. In this previous example, we can notice that our algorithm executes according to events and transitions depending on those events. Moreover, we observe that all the I/O(i.e. disk and socket) is done asynchronously, meanwhile, other states can be executed concurrently. Continuing our previous example, if  we go from state EvL to D(data from disk), and at the same time we receive a socket\_data event, the internal event loop will take care of executing the queue of events and finally switch state to C where our computation will take place.
+Let state an example with figure~\ref{fig:AsynchronousAutomaton} structure. Given a large dataset containing a sequence of integer numbers, implement an algorithm that reads a section of the dataset from disk and compute the frequency of each integer in the entire dataset. We know that if the dataset contains terabytes of data, we would need to distributively execute this algorithm and receive data from other computing points in our system. In this case, we abstract our problem in states, where state D will asynchronously read from disk, S will receive the pair of <integer, frequency> list from a network socket, and C will compute/recompute these frequencies with the disk and network data, and finally finish the execution if a certain condition is met. In this previous example, we can notice that our algorithm executes according to events and transitions depending on those events. Moreover, we observe that all the I/O(i.e. disk and socket) is done asynchronously, meanwhile, other states can be executed concurrently. Continuing our previous example, if  we go from state EvL to D(data from disk), and at the same time we receive a socket\_data event, the internal event loop will take care of executing the queue of events and finally switch state to C where our computation will take place.
 
 Now that we have seen the concept of how our system is meant to execute algorithms, we can make the following observations.
 We code routines thinking of asynchronous events that will switch the states of our algorithm at any point in time.
@@ -145,10 +146,11 @@ We will encounter situations where we need to manage dependencies in our distrib
 	\centering
 	\includegraphics[scale=0.55]{AutomatonPageRank}
 	\caption{Asynchronous automaton representation of the PageRank.}
+	\label{fig:AutomatonPageRank}
 \end{figure}
 
 
-Figure 2 shows a slightly more complex scenario. This time we present the asynchronous automaton representation of the Pagerank algorithm. 
+Figure~\ref{fig:AutomatonPageRank} shows a slightly more complex scenario. This time we present the asynchronous automaton representation of the Pagerank algorithm. 
 
 \begin{equation}
 	PR(u) =(1-d) + d\sum \frac{PR(v)}{N(v)}
@@ -165,36 +167,36 @@ Analogous to the previous example, this automata has the default EvL state, and 
 \subsubsection{Handling state dependencies and ordering}
 Dabek et. al. states that events are better means of managing I/O concurrency than threads since almost always have latent data races and deadlocks that make them less robust~\cite{Dabek2002}. In addition, they explicitly state that event-driven programs need only to allocate required memory for the event’s context, and not the whole thread stack, this way, dramatically reducing memory usage. The problem with the event-driven model is that lacks of synchronization primitives to logically state dependencies over asynchronous eventualities. This can be addressed by passing messages between events and used shared structures to differ events and reorder. This way synchronization becomes slightly clearer and reduces the number of global variables in compared to thread-based programs~\cite{Haller2009}.
 
-Let’s go back to our figure 1 example and suppose that we have a data dependency between state C(compute) and state D(read from disk). If state S(read from socket) is triggered several times before event D happens, the transition from state S to C can’t happen because the data dependency constraint is not met. In this case, we need to implement a different mechanism. 
+Let’s go back to our figure~\ref{fig:AsynchronousAutomaton} example and suppose that we have a data dependency between state C(compute) and state D(read from disk). If state S(read from socket) is triggered several times before event D happens, the transition from state S to C can’t happen because the data dependency constraint is not met. In this case, we need to implement a different mechanism. 
 
 %Figure 3
 \begin{figure}[h]	
 	\centering
 	\includegraphics[scale=0.6]{StateDependency}
 	\caption{State dependency scenario}
+	\label{fig:StateDependency}
 \end{figure}
 
 
-Figure 3 shows the previously exposed scenario where state S can’t move to the next state C if at least one event D happens first.  We can defer events S using asynchronous event emitter libraries~\cite{Caolan} and emit those events when event D happens. After this, our execution continues without problems. In figure 3 we see that S happens three times before D, each time the event is put in a queue to later be rescheduled by event D. We have other mechanisms such as promises, callbacks and signals that can be combined to fulfill all kind of dependency and control flow scenarios.
+Figure~\ref{fig:StateDependency} shows the previously exposed scenario where state S can’t move to the next state C if at least one event D happens first.  We can defer events S using asynchronous event emitter libraries~\cite{Caolan} and emit those events when event D happens. After this, our execution continues without problems. In figure~\ref{fig:StateDependency} we see that S happens three times before D, each time the event is put in a queue to later be rescheduled by event D. We have other mechanisms such as promises, callbacks and signals that can be combined to fulfill all kind of dependency and control flow scenarios.
 
 %Architecture 
 
 \subsection{Architecture}
-Our system is composed of long-running daemons installed with just one command via the Node Package Manager~\cite{NPM}. Figure 5 shows the peer-to-peer architecture of the system which is comprised of four main components. Each one of the components can be described as follows:
-Clients: A client(group 2 in figure 5)  is the starting point of all executions in the system. This is where we specify our distributed algorithm, the specific Sandboxes to be executed, the data sources, and the different settings of the execution. Each deployment is a job and we can have an arbitrary number of jobs executing at the same time.
-Sandboxes: Each Sandbox(group 4 in figure 5) is a multi-tenant execution point where all deployed jobs run concurrently. Each time a client deploys a job, all target Sandboxes execute the asynchronous automaton code concurrently. In the next section, we will discuss in detail how the sandbox accomplishes each task.
-Datasources: The Datasources(group 1 in figure 5) are any remote source that feeds the Job’s Sandboxes. This can be a streaming source, a remote filesystem, or a cloud storage service such as Amazon’s Cloud Drive~\cite{Amazon}.
-Servers: Each server(group 1 in figure 5)  has a register of each Sandbox, Client, and Datasources. The servers monitor every connection to the Sandboxes, clients and Datasources in real-time and notify every relevant change to the corresponding node, i.e. disconnection of a sandbox to an ongoing job’s client. The Server component is inspired by software-defined networking (SDN) Controllers~\cite{Mckeown2008}.
+Our system is composed of long-running daemons installed with just one command via the Node Package Manager~\cite{NPM}. Figure~\ref{fig:architectureDiagram} shows the peer-to-peer architecture of the system which is comprised of four main components. Each one of the components can be described as follows:
+Clients: A client(group 2 in figure~\ref{fig:architectureDiagram})  is the starting point of all executions in the system. This is where we specify our distributed algorithm, the specific Sandboxes to be executed, the data sources, and the different settings of the execution. Each deployment is a job and we can have an arbitrary number of jobs executing at the same time.
+Sandboxes: Each Sandbox(group 4 in figure~\ref{fig:architectureDiagram}) is a multi-tenant execution point where all deployed jobs run concurrently. Each time a client deploys a job, all target Sandboxes execute the asynchronous automaton code concurrently. In the next section, we will discuss in detail how the sandbox accomplishes each task.
+Datasources: The Datasources(group 1 in figure~\ref{fig:architectureDiagram}) are any remote source that feeds the Job’s Sandboxes. This can be a streaming source, a remote filesystem, or a cloud storage service such as Amazon’s Cloud Drive~\cite{Amazon}.
+Servers: Each server(group 1 in figure~\ref{fig:architectureDiagram})  has a register of each Sandbox, Client, and Datasources. The servers monitor every connection to the Sandboxes, clients and Datasources in real-time and notify every relevant change to the corresponding node, i.e. disconnection of a sandbox to an ongoing job’s client. The Server component is inspired by software-defined networking (SDN) Controllers~\cite{Mckeown2008}.
 
 
 % FIGURE 4 Architecture Huge image
-
 \begin{figure*}
 	\centering
 	\includegraphics[scale=0.6]{architectureDiagram}
 	\caption{Architecture of JSpeed.io which is comprised of four main components: Servers, Clients, Datasources, and Sandboxes.}
+	\label{fig:architectureDiagram}
 \end{figure*}
-
 
 
 The system heavily relies on WebSockets. We are currently using the Socket.io \cite{Socket.} library for the real-time communication from which we leverage convenient features such as heartbeats, connection state, and event-driven communication. The Servers are continuously listening for connections from Clients, Sandboxes, and Datasources. Each time a new Sandbox connection comes in, the servers register the new node and broadcast its presence to Clients. At each disconnection, the Servers also broadcast the disconnection to Clients, in addition to fault tolerance messages if the Sandbox was executing a job.
@@ -203,7 +205,7 @@ The system heavily relies on WebSockets. We are currently using the Socket.io \c
 
 The sandbox is perhaps the most complex component of our system. In its simplest form, the sandbox is a software of contention for executing third party javaScript routines in a distributed fashion. When a Sandbox is executed it follows following tasks:
 Benchmark the performance of the environment(Node.js or Browser) in order to provide weighting metrics to the clients. These metrics will be used to fairly distribute job's loads among the group of selected Sandboxes at deployment time.
-Spawn child process pool for jobs execution. Depending on the number of cores of the host, the Sandbox will spawn a subprocess pool where jobs will run. This is necessary since javaScript is single threaded, and each subprocess container will be handle isolated Job execution. Figure 4 shows how the sandbox contains two containers executing asynchronous automatons in an isolated manner.
+Spawn child process pool for jobs execution. Depending on the number of cores of the host, the Sandbox will spawn a subprocess pool where jobs will run. This is necessary since javaScript is single threaded, and each subprocess container will be handle isolated Job execution. Figure~\ref{fig:sandboxDiagram} shows how the sandbox contains two containers executing asynchronous automatons in an isolated manner.
 Setup Job's queue structures/registers and inbound/outbound communication(Socket.io events).
 Notify the Servers and send metrics(benchmark, NAT presence, IP, link speed, runtime capabilities, etc).
 Wait in the event loop for events (Connection/Disconnection, Jobs). Socket.io takes care of the connection heartbeats for us.
@@ -216,6 +218,7 @@ This may look like a straightforward model. In fact, the Node.js version of the 
 	\centering
 	\includegraphics[scale=0.7]{sandboxDiagram}
 	\caption{Architecture of the JSpeed.io’s sandbox.}
+	\label{fig:sandboxDiagram}
 \end{figure}
 
 % Figure 4: Architecture of the JSpeed.io’s sandbox.
@@ -286,10 +289,11 @@ At each deployment, we specified the number of Sandboxes (from 1 to 50), and pro
 	\centering
 	\includegraphics[scale=2.5]{SpeedUp_MapReduce_2GB_Small}
 	\caption{SpeedUp MapReduce with 2GB.}
+	\label{fig:SpeedUp_MapReduce}
 \end{figure}
 
 
-In figure 7 we can observe how the efficiency of the execution drops as the number of Sandboxes increases. As more execution points are added, the overhead of communication, disk I/O, and scheduling increases. We observe how the efficiency drops from 97\% with 2 Sandboxes, to 33\% with 50 Sandboxes.
+In figure~\ref{fig:SpeedUp_MapReduce} we can observe how the efficiency of the execution drops as the number of Sandboxes increases. As more execution points are added, the overhead of communication, disk I/O, and scheduling increases. We observe how the efficiency drops from 97\% with 2 Sandboxes, to 33\% with 50 Sandboxes.
 
 
 %EFFICIENCY
@@ -297,6 +301,7 @@ In figure 7 we can observe how the efficiency of the execution drops as the numb
 	\centering
 	\includegraphics[scale=2.5]{Efficiency_MapReduce_2GB_small}
 	\caption{Efficiency MapReduce with 2GB.}
+	\label{fig:Efficiency}
 \end{figure}
 
 We observed significant speedUp and efficiency if we consider the fact that our system still in a prototypical stage and we haven’t implemented important optimizations and tuning. The Server, Client and Sandbox components of this experiment were remotely located, i.e. all communication was over the internet and not in a LAN.
@@ -304,13 +309,14 @@ We observed significant speedUp and efficiency if we consider the fact that our 
 
 \subsection{Overhead}
 
-In the second experiment, we measured the task creation overhead of JSpeed.io in comparison with the Message Passing Interface (MPI). Using 18 Quad-Core machines, we incrementally deployed an empty task(no computation) in multiples of 18. As we can observe in figure 9, JSpeed outperforms MPI in the first 40 task deployments, then the overhead behaves almost linearly constant until approximately 90 tasks. MPI would scale pretty well horizontally while our system will reach a bottleneck in the communication after 90. Figure 9 shows how the JSpeed.io overhead drastically increases when the single-threaded server reaches the communication limit. In the next version of JSpeed.io, the Server will be scaled horizontally by using a load balancer~\cite{Nginx}, and multiple processes connected via a key-value cache and store~\cite{Redis}.
+In the second experiment, we measured the task creation overhead of JSpeed.io in comparison with the Message Passing Interface (MPI). Using 18 Quad-Core machines, we incrementally deployed an empty task(no computation) in multiples of 18. As we can observe in figure 9, JSpeed outperforms MPI in the first 40 task deployments, then the overhead behaves almost linearly constant until approximately 90 tasks. MPI would scale pretty well horizontally while our system will reach a bottleneck in the communication after 90. Figure~\ref{fig:Overhead} shows how the JSpeed.io overhead drastically increases when the single-threaded server reaches the communication limit. In the next version of JSpeed.io, the Server will be scaled horizontally by using a load balancer~\cite{Nginx}, and multiple processes connected via a key-value cache and store~\cite{Redis}.
 
 %OVERHEAD
 \begin{figure}	
 	\centering
 	\includegraphics[scale=3.0]{Overhead}
 	\caption{JSpeed.io and MPI task creation overhead.}
+	\label{fig:Overhead}
 \end{figure}
 
 
@@ -321,9 +327,10 @@ Our third experiment consists of approximating PI with the Monte Carlo method. S
 	\centering
 	\includegraphics[scale=3.0]{PI_Approximation} %PI_Approximation
 	\caption{JSpeed.io and MPI Monte Carlo PI approximation.}
+	\label{fig:PI}
 \end{figure}
 
-The results shown in figure 9 raises a common question: How is an execution in Javascript almost as fast as native compiled C code? The answer is a combination of many factors. First, the native MPI execution is faster in the context of each node. On other hand, JSpeed.io has low task deployment overhead as we saw in figure 8. Another factor is that the V8 engine highly optimizes Javascript code via its Dynamic Machine Code Generation[28] that can lead to almost native performance.
+The results shown in figure~\ref{fig:Overhead} raises a common question: How is an execution in Javascript almost as fast as native compiled C code? The answer is a combination of many factors. First, the native MPI execution is faster in the context of each node. On other hand, JSpeed.io has low task deployment overhead as we saw in figure 8. Another factor is that the V8 engine highly optimizes Javascript code via its Dynamic Machine Code Generation[28] that can lead to almost native performance.
 
 
 \subsection{Scaling}
@@ -331,11 +338,12 @@ The results shown in figure 9 raises a common question: How is an execution in J
 	\centering
 	\includegraphics[scale=3.0]{MapReduce_Benchmark}
 	\caption{JSpeed.io and Hadoop MapReduce Job Scaling from 1GB to 10GB datasets.}
+	\label{fig:JobScaling}
 \end{figure}
 
 In our fourth experiment, we benchmark the scaling of Hadoop MapReduce and JSpeed.io’s. After measuring processing time of all datasets(1GB-10GB) on both systems, we observed a noticeable difference in the linear scaling.
 
-As shown in figure 11, JSpeed.io linear execution times grows slower than those in Hadoop. Both systems ran on the same machines, with equivalent algorithms, and generate the same results. Figure 11 shows the difference in completion times on both systems. The 10GB dataset took 367 and 176 seconds to complete with Hadoop and JSpeed.io respectively. With a difference of 197 seconds, JSpeed.io process the biggest dataset 2.09 times faster than Hadoop. These results, although hard to believe, have a simple explanation. Hadoop is way more complete and robust than our system, and can scale up to terabytes of data. JSpeed.io is currently limited to relatively small datasets and lacks basic features, such as execution checkpoints, group communication(the prototype), sophisticated fault tolerance, and many other elements that cause overhead in the overall execution flow but are completely necessary. Another JSpeed.io limitation is the  ~1.7GiB (64 bits) and ~1 GiB(32bits) of RAM consumption limit per Sandbox due to the V8 engine internals, although this may change in the near future.  JSpeed.io is designed as a general purpose distributed platform, and in this experiment we demonstrated the capabilities of emulating algorithms such as MapReduce.
+As shown in figure~\ref{fig:JobScaling}, JSpeed.io linear execution times grows slower than those in Hadoop. Both systems ran on the same machines, with equivalent algorithms, and generate the same results. Figure~\ref{fig:JobScaling} shows the difference in completion times on both systems. The 10GB dataset took 367 and 176 seconds to complete with Hadoop and JSpeed.io respectively. With a difference of 197 seconds, JSpeed.io process the biggest dataset 2.09 times faster than Hadoop. These results, although hard to believe, have a simple explanation. Hadoop is way more complete and robust than our system, and can scale up to terabytes of data. JSpeed.io is currently limited to relatively small datasets and lacks basic features, such as execution checkpoints, group communication(the prototype), sophisticated fault tolerance, and many other elements that cause overhead in the overall execution flow but are completely necessary. Another JSpeed.io limitation is the  ~1.7GiB (64 bits) and ~1 GiB(32bits) of RAM consumption limit per Sandbox due to the V8 engine internals, although this may change in the near future.  JSpeed.io is designed as a general purpose distributed platform, and in this experiment we demonstrated the capabilities of emulating algorithms such as MapReduce.
 
 
 \section{Future Work}
