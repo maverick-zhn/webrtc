@@ -80,5 +80,12 @@ http://www.bibtex.org/Using/
 https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM
 http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file
 
+###Conferences
+* http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/
+* http://www.wikicfp.com/cfp/program?id=1330
+* http://www.ipdps.org/
+* http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=44913&copyownerid=50937
+* 
+
 
 
