@@ -85,7 +85,13 @@ http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-
 * http://www.wikicfp.com/cfp/program?id=1330
 * http://www.ipdps.org/
 * http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=44913&copyownerid=50937
-* 
+
+
+###Paper Submission
+
+####Form of manuscript
+All submissions should follow the IEEE 8.5” x 11” two-column format. Each submission can have up to 10 pages. An appendix of up to 2 pages is also allowed. If the paper is accepted for publication, up to 2 extra pages may be purchased for the camera-ready version. Submissions should NOT be blinded for review.
+
 
 
 
