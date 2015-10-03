@@ -92,6 +92,7 @@ http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-
 ####Form of manuscript
 All submissions should follow the IEEE 8.5” x 11” two-column format. Each submission can have up to 10 pages. An appendix of up to 2 pages is also allowed. If the paper is accepted for publication, up to 2 extra pages may be purchased for the camera-ready version. Submissions should NOT be blinded for review.
 
-
+####Template
+* http://www.ieee.org/conferences_events/conferences/publishing/templates.html
 
 
