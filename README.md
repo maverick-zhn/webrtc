@@ -95,4 +95,5 @@ All submissions should follow the IEEE 8.5” x 11” two-column format. Each su
 ####Template
 * http://www.ieee.org/conferences_events/conferences/publishing/templates.html
 
-
+####Other
+* http://asoftmurmur.com/
