@@ -3,7 +3,7 @@ WebRTC examples and documentation
 
 WebRTC offers web application developers the ability to write rich, realtime multimedia applications (think video chat) on the web, without requiring plugins, downloads or installs. It's purpose is to help build a strong RTC platform that works across multiple web browsers, across multiple platforms. (taken from http://www.webrtc.org/)
 
-### TODO.
+### TODO
 
 * ~~Setting environment, prepare webrtc codelab~~
 * ~~Research articles an implementation details~~
@@ -27,6 +27,9 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 7. https://code.google.com/p/rfc5766-turn-server/
 8. http://www.html5rocks.com/en/tutorials/webrtc/basics/
 9. http://socket.io/docs/
+
+### WebRTC Updates
+* RecordRTC is a server-less (entire client-side) JavaScript library can be used to record WebRTC audio/video media streams. [https://github.com/muaz-khan/RecordRTC]
 
 ### Environment
 1. https://dashboard.heroku.com/apps
