@@ -30,6 +30,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 
 ### WebRTC Updates
 * RecordRTC is a server-less (entire client-side) JavaScript library can be used to record WebRTC audio/video media streams. [https://github.com/muaz-khan/RecordRTC]
+* ORTC Microsoft Edge improved RTC [https://www.w3.org/community/ortc/]
 
 ### Environment
 1. https://dashboard.heroku.com/apps
