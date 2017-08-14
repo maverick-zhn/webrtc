@@ -44,7 +44,7 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 9. http://socket.io/docs/
 10. https://github.com/Automattic/socket.io/issues/1544
 
-###MapReduce Java
+### MapReduce Java
 * http://wiki.apache.org/hadoop/WordCount
 * http://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html
 * [1]http://thedevnotes.blogspot.com/2014/02/starting-with-hadoop-and-mapreduce.html
@@ -53,12 +53,12 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * [Installing Eclipse]http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/
 * https://hadoop.apache.org/docs/current/api/org/apache/hadoop/examples/terasort/package-summary.html
 
-###Paper links
+### Paper links
 * http://stackoverflow.com/questions/24119897/apache-spark-vs-apache-storm
 * https://sites.google.com/site/acm2015socc/home/call-for-papers
 * http://www.read.seas.harvard.edu/~kohler/latex.html
 
-####Cited papers
+#### Cited papers
 * http://bit.ly/1FjEwVN
 * http://bit.ly/1CdjBNI
 * http://bit.ly/1CdjPEF
@@ -71,33 +71,33 @@ WebRTC offers web application developers the ability to write rich, realtime mul
 * http://bit.ly/1Cw5SQZ
 * http://bit.ly/1yc9Bs3
 
-####Tools
+#### Tools
 * http://www.paperrater.com/
 * http://detexify.kirelabs.org/classify.html
 * http://matplotlib.org/
 * http://www.read.seas.harvard.edu/~kohler/latex.html
 * http://www.tablesgenerator.com/
 
-####References
+#### References
 http://www.bibtex.org/
 http://www.bibtex.org/Using/
 https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM
 http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file
 
-###Conferences
+### Conferences
 * http://www-higashi.ist.osaka-u.ac.jp/icdcs2016/
 * http://www.wikicfp.com/cfp/program?id=1330
 * http://www.ipdps.org/
 * http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=44913&copyownerid=50937
 
 
-###Paper Submission
+### Paper Submission
 
-####Form of manuscript
+#### Form of manuscript
 All submissions should follow the IEEE 8.5” x 11” two-column format. Each submission can have up to 10 pages. An appendix of up to 2 pages is also allowed. If the paper is accepted for publication, up to 2 extra pages may be purchased for the camera-ready version. Submissions should NOT be blinded for review.
 
-####Template
+#### Template
 * http://www.ieee.org/conferences_events/conferences/publishing/templates.html
 
-####Other
+#### Other
 * http://asoftmurmur.com/
